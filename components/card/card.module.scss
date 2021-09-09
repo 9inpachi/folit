@@ -1,0 +1,18 @@
+.cardSection {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  padding: 2rem 4rem;
+  border: 0.5rem solid #000000;
+  border-top-width: 0.2rem;
+  border-left-width: 0.2rem;
+  border-radius: 0.5rem;
+
+  h2 {
+    margin: 0;
+  }
+}

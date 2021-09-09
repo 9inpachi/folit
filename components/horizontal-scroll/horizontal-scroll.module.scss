@@ -1,0 +1,14 @@
+.horizontalScroll {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  overflow-x: auto;
+
+  & > * {
+    flex: 0 0 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
