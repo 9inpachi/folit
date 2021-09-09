@@ -1,16 +1,14 @@
-import { FC } from "react";
+import { FC, useRef } from "react";
+import { useScroll } from "./functions/use-scroll";
 
 import styles from "./horizontal-scroll.module.scss";
 
 export const HorizontalScroll: FC = ({ children }) => {
+  const wrapperRef = useRef<HTMLDivElement>(null);
+  const { onWheel } = useScroll(wrapperRef);
+
   return (
-    <div
-      className={styles.horizontalScroll}
-      onScroll={(e) => {
-        e.preventDefault();
-        console.log((e.target as HTMLDivElement).scrollLeft);
-      }}
-    >
+    <div ref={wrapperRef} className={styles.horizontalScroll} onWheel={onWheel}>
       {children}
     </div>
   );
