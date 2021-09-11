@@ -1,10 +1,8 @@
-import { RefObject, WheelEventHandler } from "react";
+import { WheelEventHandler } from "react";
 
-export const useScroll = (wrapperRef: RefObject<HTMLDivElement>) => {
+export const useScroll = () => {
   const onWheel: WheelEventHandler<HTMLDivElement> = (event) => {
-    if (wrapperRef.current) {
-      wrapperRef.current.scrollLeft += event.deltaY;
-    }
+    event.currentTarget.scrollLeft += event.deltaY;
   };
 
   return { onWheel };
