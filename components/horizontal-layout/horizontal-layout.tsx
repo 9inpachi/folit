@@ -1,9 +1,9 @@
 import { FC } from "react";
 import { useScroll } from "./functions/use-scroll";
 
-import styles from "./horizontal-scroll.module.scss";
+import styles from "./horizontal-layout.module.scss";
 
-export const HorizontalScroll: FC = ({ children }) => {
+export const HorizontalLayout: FC = ({ children }) => {
   const { onWheel } = useScroll();
 
   return (

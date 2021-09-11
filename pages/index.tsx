@@ -1,9 +1,7 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
-import Image from 'next/image'
 import { Card } from '../components/card/card'
-import { HorizontalScroll } from '../components/horizontal-scroll/horizontal-scroll'
-import styles from '../styles/Home.module.scss'
+import { HorizontalLayout } from '../components/horizontal-layout/horizontal-layout'
 
 const Home: NextPage = () => {
   return (
@@ -14,14 +12,14 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <HorizontalScroll>
+      <HorizontalLayout>
         <Card title="Hello World!">
           This is some random text.
         </Card>
         <Card title="Hello World 2!">
           This is some random text.
         </Card>
-      </HorizontalScroll>
+      </HorizontalLayout>
       {/* <main className={styles.main}>
         <h1 className={styles.title}>
           Welcome to <a href="https://nextjs.org">Next.js!</a>
