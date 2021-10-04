@@ -1,11 +1,17 @@
+.horizontalLayout {
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+
 .horizontalScroll {
   display: flex;
   flex-wrap: nowrap;
   flex-direction: row;
   overflow-x: auto;
   align-items: stretch;
-  height: 100vh;
-  transition: transform 1s;
+  height: 100%;
+  width: 100%;
 
   & > * {
     flex: 0 0 100%;
